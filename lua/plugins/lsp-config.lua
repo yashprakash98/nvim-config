@@ -11,7 +11,7 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
-					"tsserver",
+          "ts_ls",
 					"pyright",
 					"gopls",
 				},
@@ -25,8 +25,8 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
-			lspconfig.tsserver.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({ capabilities = capabilities })
+			lspconfig.ts_ls.setup({ capabilities = capabilities })
 			lspconfig.pyright.setup({ capabilities = capabilities })
 
 			vim.keymap.set("n", "<space>e", vim.diagnostic.open_float)
