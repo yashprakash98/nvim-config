@@ -9,6 +9,7 @@ vim.cmd("set colorcolumn=80")
 
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>b", "<C-^><CR>", {})
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>:q<CR>", {})
 
 vim.cmd("highlight Normal guibg=NONE")
 vim.cmd("highlight NonText guibg=NONE")
