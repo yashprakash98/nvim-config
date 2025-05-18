@@ -27,3 +27,6 @@ vim.keymap.set("n", "<leader>tv", function()
     vim.cmd.wincmd("L")
 end)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>:q<CR>", {})
+
+-- Floating todo configurations
+vim.keymap.set("n", "<leader>td", ":Todo<CR>", {silent = true})
