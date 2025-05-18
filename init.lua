@@ -26,3 +26,7 @@ vim.cmd("highlight NvimTreePopup guibg=NONE")
 vim.cmd("highlight NvimTreePopup ctermbg=NONE")
 vim.cmd("highlight NormalNC guibg=NONE")
 vim.cmd("highlight NormalNC ctermbg=NONE")
+
+vim.cmd("set termguicolors")
+vim.cmd("set background=dark")
+vim.cmd("colorscheme zenbones")
