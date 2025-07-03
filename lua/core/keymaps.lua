@@ -20,13 +20,16 @@ vim.keymap.set("n", "<leader>ts", function()
     vim.cmd.vnew()
     vim.cmd.term()
     vim.cmd.wincmd("J")
+    vim.cmd.startinsert()
 end)
 vim.keymap.set("n", "<leader>tv", function()
     vim.cmd.vnew()
     vim.cmd.term()
     vim.cmd.wincmd("L")
+    vim.cmd.startinsert()
 end)
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>:q<CR>", {})
 
--- Floating todo configurations
-vim.keymap.set("n", "<leader>td", ":Todo<CR>", {silent = true})
+
+-- Keymap for file explorer since :E no longer works in new versions
+vim.keymap.set("n", "<leader>ee", ":Explore<CR>", {silent = true})

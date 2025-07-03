@@ -28,5 +28,5 @@ vim.cmd("highlight NormalNC guibg=NONE")
 vim.cmd("highlight NormalNC ctermbg=NONE")
 
 vim.cmd("set termguicolors")
+vim.cmd("colorscheme gruvbox-material")
 vim.cmd("set background=dark")
-vim.cmd("colorscheme zenbones")
